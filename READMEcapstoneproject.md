@@ -24,11 +24,12 @@ flowchart TD
     A["CSV Data Source (Parking Dataset)"] -->|Replay/Stream| B[Pathway Streaming Pipeline]
     B --> C[Feature Engineering & Aggregation]
     C --> D[Dynamic Pricing Algorithm]
-    D --> E[Visualization Engine<br>(Bokeh/Panel)]
+    D --> E[Visualization Engine (Bokeh/Panel)]
     E --> F[Dashboard/Reports]
-    D --> G[API Endpoint (Future)]
-    B -->|Monitoring| H[Logs & Metrics]
-```
+    F --> G[API Endpoint (Future)]
+    B --> H[Monitoring]
+    H --> I[Logs & Metrics]
+
 
 ---
 
