@@ -21,7 +21,7 @@ The **Smart Parking Dynamic Pricing System** is a Capstone project leveraging re
 
 ```mermaid
 flowchart TD
-    A[CSV Data Source<br>(Parking Dataset)] -->|Replay/Stream| B[Pathway Streaming Pipeline]
+    A["CSV Data Source (Parking Dataset)"] -->|Replay/Stream| B[Pathway Streaming Pipeline]
     B --> C[Feature Engineering & Aggregation]
     C --> D[Dynamic Pricing Algorithm]
     D --> E[Visualization Engine<br>(Bokeh/Panel)]
